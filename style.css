@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+
+
+body{
+    background-color:var(--Cream);
+    display: grid;
+    place-items: center;
+    min-height:100vh;
+    font-size:14px;
+}
+
+.container{
+    display: flex;
+/* background-color: rgb(199, 102, 102); */
+width: fit-content;
+/* margin: auto; */
+margin-top:6rem;
+border-radius:7px;
+}
+.image{
+    width: fit-content;
+    display: flex;
+  border-top-left-radius:7px;
+  border-bottom-left-radius:7px;
+}
+.image img{
+width:300px;
+border-top-left-radius:7px;
+border-bottom-left-radius:7px;
+}
+.second{
+    display: flex;
+    flex-direction:column;
+    /* border: 1px solid black; */
+    width: fit-content;
+    background-color: #fff;
+    text-align: justify;
+    justify-content: space-around;
+    padding:10px 25px;
+    border-top-right-radius:7px;
+    border-bottom-right-radius:7px;
+}
+
+
+.second .heading{
+    /* border: 1px solid rgb(250, 58, 58); */
+    width:170px;
+    font-family: 'Fraunces', serif;
+    font-size:1.7rem;
+    font-weight:700;
+}
+
+.second .para1{
+    /* border: 1px solid black; */
+    letter-spacing:5px;
+    color:var(--Dark-grayish-blue);
+     font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-weight:500;
+}
+.second .para2{
+    /* border: 1px solid black; */
+    width:210px;
+    line-height:20px;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif;
+color:var(--Dark-grayish-blue);
+font-weight:500;
+word-spacing:2px;
+}
+
+.second #price{
+    width:fit-content;
+    /* border: 1px solid rgb(74, 0, 143); */
+display: flex;
+align-items: center;
+font-family: 'Fraunces', serif;
+}
+.second #price>h1{
+    width: fit-content;
+    margin-right:20px;
+    color:var(--Dark-cyan);
+    font-weight: 700;
+    font-size:1.5rem;
+    
+}
+
+.second #price p{
+    width: fit-content;
+    font-size:13px;
+    text-decoration:line-through;
+    color:var(--Dark-grayish-blue);
+}
+
+.second button{
+    /* width: fit-content; */
+    background-color:var(--Dark-cyan);
+    font-size:12px;
+ 
+    padding:10px 20px;
+    border-radius:5px;
+    color:var(--White);
+    text-align: center;
+    cursor: pointer;
+}
+.second button img{
+    width:11px;
+    height:12px;
+    margin-right:5px;
+    }
+    .second button:active{
+        background-color:hsl(158deg 31% 22%);
+        cursor: pointer;
+    }
+
+ .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media only screen and (max-width:530px){
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+        .container{
+            display: flex;
+            flex-direction:column;
+            margin-top:3rem;
+            margin-bottom:3rem;
+            /* border:1px solid black; */
+        }
+        .image{
+            width: fit-content;
+            display: flex;
+          /* border-top-left-radius:7px;
+          border-bottom-left-radius:7px; */
+        }
+        .image img{
+            /* background-image: url('images/image-product-mobile.jpg'); */
+            width:270px;    
+            height:160px;
+            /* border:1px solid red; */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius:7px 7px 0px 0px;
+        }
+    
+        .second{
+    border-radius:0px 0px 7px 7px;
+    padding: 17px 25px;
+        }
+        .second .heading{
+            /* border: 1px solid rgb(250, 58, 58); */
+            width: 220px;
+            font-family: 'Fraunces', serif;
+            font-size: 1.511rem;
+            word-spacing: 4px;
+            margin:8px 0px;
+        }
+      
+        .second .para2{
+            margin-bottom: 17px;
+        }
+        .second button{
+    margin-top:14px;
+    
+        }
+      }
